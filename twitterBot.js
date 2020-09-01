@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const {prefix, token} = require('./twitterBotconfig.json');
+const {prefix, token,channelid} = require('./twitterBotconfig.json');
 const client = new Discord.Client();
 const socket = require('socket.io-client')('http://localhost:3000');
 
@@ -21,7 +21,7 @@ client.once('ready',()=>{
     //client.user.setAvatar('./ava.jpg')
     console.log('Bot connected');
     client.user.setActivity('%help');
-    let botChannel=client.channels.cache.find(channel => channel.id==='747101701982519307');
+    let botChannel=client.channels.cache.find(channel => channel.id===channelid);
 
     client.on('message',message=>{
         let messageChannelid = message.channel.id;
