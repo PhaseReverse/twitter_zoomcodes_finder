@@ -3,7 +3,7 @@ Filter latest zoom codes from twitter to join
 
 Follow these steps:
 1. install nodejs
-2. open terminal and type: npm install
+2. go to the folder Open terminal and type: npm install in the folder
 3. Edit the twitterBotconfig file (Enter the Bot token configured in Discord Developers portal AND enter the channelId where the Bot will Read and Send messages)
 4. click on start.exe to start(for windows)
  
